@@ -26,12 +26,12 @@ pipeline {
         }
           stage('Build Docker Image') {
             steps {
-               
+               echo 'Building Docker Image'
             }
         }
           stage('Push docker image to Docker hub') {
             steps {
-              
+               echo 'Pushing Docker Image'
             }
         }
     }

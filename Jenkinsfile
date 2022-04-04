@@ -24,5 +24,15 @@ pipeline {
                jacoco()
             }
         }
+          stage('Build Docker Image') {
+            steps {
+               
+            }
+        }
+          stage('Push docker image to Docker hub') {
+            steps {
+              
+            }
+        }
     }
 }

@@ -31,7 +31,8 @@ pipeline {
         }
           stage('Push docker image to Docker hub') {
             steps {
-               echo 'Pushing Docker Image'
+               bat 'docker login -u username -p password'
+               bat 'docker push vishwa99/test'
             }
         }
     }

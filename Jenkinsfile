@@ -26,7 +26,7 @@ pipeline {
         }
           stage('Build Docker Image') {
             steps {
-               echo 'Building Docker Image'
+               bat 'docker build -t vishwa99/test .'
             }
         }
           stage('Push docker image to Docker hub') {

@@ -9,7 +9,8 @@ pipeline {
         }
          stage('Package') {
             steps {
-                bat 'mvn clean package'
+                bat 'mvn clean package' //thi is for windows
+                //sh'mvn clean package' - this is for linux
             }
         }
         stage('Sonar Qube') {
